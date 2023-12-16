@@ -8,7 +8,7 @@ from datetime import datetime, date
 
 
 class KBAccountReport(models.AbstractModel):
-    _name = 'report.customer_vendor_statement.vendor_statement_report'
+    _name = 'report.customer_supplier_payment_statement.vendor_statement_report'
     _description = "Vendor Statement report"
 
     @api.model

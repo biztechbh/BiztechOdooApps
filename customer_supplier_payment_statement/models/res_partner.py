@@ -111,7 +111,7 @@ class Partner(models.Model):
             report = self.env[
                 'ir.actions.report'
             ].sudo()._render_qweb_pdf(
-                'customer_vendor_statement.res_partner_action',
+                'customer_supplier_payment_statement.res_partner_action',
                 self, data=data)
             data_record = base64.b64encode(report[0])
             ir_values = {
@@ -169,7 +169,7 @@ class Partner(models.Model):
                 'balance': amount[0]['balance'],
                 'currency': self.currency_id.symbol,
             }
-            return self.env.ref('customer_vendor_statement.res_partner_action'
+            return self.env.ref('customer_supplier_payment_statement.res_partner_action'
                                 ).report_action(self, data=data)
         else:
             raise ValidationError('There is no statement to print')
@@ -442,7 +442,7 @@ class Partner(models.Model):
                     'my_data': main,
                 }
                 report = self.env['ir.actions.report']._render_qweb_pdf(
-                    'customer_vendor_statement.res_partner_action',
+                    'customer_supplier_payment_statement.res_partner_action',
                     self, data=data)
                 data_record = base64.b64encode(report[0])
                 ir_values = {
@@ -573,7 +573,7 @@ class Partner(models.Model):
                     'my_data': main,
                 }
                 report = self.env['ir.actions.report']._render_qweb_pdf(
-                    'customer_vendor_statement.res_partner_action',
+                    'customer_supplier_payment_statement.res_partner_action',
                     self, data=data)
                 data_record = base64.b64encode(report[0])
                 ir_values = {
@@ -688,7 +688,7 @@ class Partner(models.Model):
                 'currency': self.currency_id.symbol,
             }
             return self.env.ref(
-                'customer_vendor_statement.res_partner_action').report_action(
+                'customer_supplier_payment_statement.res_partner_action').report_action(
                 self, data=data)
         else:
             raise ValidationError('There is no statement to print')
@@ -718,7 +718,7 @@ class Partner(models.Model):
                 'currency': self.currency_id.symbol,
             }
             report = self.env['ir.actions.report'].sudo()._render_qweb_pdf(
-                'customer_vendor_statement.res_partner_action', self, data=data)
+                'customer_supplier_payment_statement.res_partner_action', self, data=data)
             data_record = base64.b64encode(report[0])
             ir_values = {
                 'name': 'Statement Report',

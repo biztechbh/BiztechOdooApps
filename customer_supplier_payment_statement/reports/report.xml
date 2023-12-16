@@ -5,16 +5,16 @@
             <field name="name">Customer Vendor Report</field>
             <field name="model">customer.vendor.wizard</field>
             <field name="report_type">qweb-pdf</field>
-            <field name="report_name">customer_vendor_statement.vendor_statement_report</field>
-            <field name="report_file">customer_vendor_statement.vendor_statement_report</field>
+            <field name="report_name">customer_supplier_payment_statement.vendor_statement_report</field>
+            <field name="report_file">customer_supplier_payment_statement.vendor_statement_report</field>
         </record>
 
         <record id="action_customer_vendor_xlsx" model="ir.actions.report">
             <field name="name">Customer Vendor XLSX</field>
             <field name="model">customer.vendor.wizard</field>
             <field name="report_type">xlsx</field>
-            <field name="report_name">customer_vendor_statement.report_account_xlsx</field>
-            <field name="report_file">customer_vendor_statement.report_account_xlsx</field>
+            <field name="report_name">customer_supplier_payment_statement.report_account_xlsx</field>
+            <field name="report_file">customer_supplier_payment_statement.report_account_xlsx</field>
         </record>
 
 

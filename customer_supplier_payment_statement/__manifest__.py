@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Customer Vendor Statement',
+    'name': 'Customer Supplier Payment Statement',
     'version': '16.0',
-    'summary': "Customer Vendor Statement Reports",
+    'summary': "Customer Supplier Payment+ Statement Reports",
     'sequence': 16,
     'description': """
                     Odoo Account Reports

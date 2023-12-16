@@ -22,6 +22,7 @@
         'templates/middle_login_template.xml',
     ],
     'qweb': [
+        
     ],
     'installable': True,
     'application': True,

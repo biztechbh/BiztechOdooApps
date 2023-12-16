@@ -28,7 +28,7 @@
     },
     'demo': [],
     'license': 'AGPL-3',
-    'images': ['static/description/biztech.png'],
+    'images': ['static/description/icon.png'],
     'installable': True,
     'application': True,
     'auto_install': False,

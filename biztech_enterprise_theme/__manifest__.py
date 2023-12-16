@@ -9,24 +9,24 @@
     'depends': [
         'web'
     ],
-    'category':'Branding',
+    'category': 'Branding',
     'description': """
            Odoo Enterprise Theme
     """,
     'assets': {
         'web._assets_primary_variables': [
-            '/enterprise_theme/static/src/scss/primary_variables_custom.scss',
+            '/biztech_enterprise_theme/static/src/scss/primary_variables_custom.scss',
         ],
         'web.assets_common': [
-            '/enterprise_theme/static/src/scss/fields_extra_custom.scss',
+            '/biztech_enterprise_theme/static/src/scss/fields_extra_custom.scss',
         ],
         'web._assets_secondary_variables': [
-            '/enterprise_theme/static/src/scss/secondary_variables.scss',
+            '/biztech_enterprise_theme/static/src/scss/secondary_variables.scss',
         ],
     },
     'installable': True,
     'auto_install': False,
     'application': True,
-    'images': ['static/description/banner.gif'], 
+    'images': ['static/description/icon.png'],
     
 }

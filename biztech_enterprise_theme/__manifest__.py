@@ -24,7 +24,7 @@
             '/biztech_enterprise_theme/static/src/scss/secondary_variables.scss',
         ],
     },
-    
+
     'installable': True,
     'auto_install': False,
     'application': True,

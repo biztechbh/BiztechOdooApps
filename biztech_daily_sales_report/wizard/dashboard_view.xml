@@ -2,12 +2,13 @@
 <odoo>
     <data>
 
-        <record model="ir.ui.view" id="hourly_sales_dashboard_wizard_form_view">
-            <field name="name">wizard.hourly.sales.dashboard.report.form</field>
-            <field name="model">wizard.hourly.sales.dashboard.report</field>
+        <record model="ir.ui.view" id="sales_dashboard_wizard_form_view">
+            <field name="name">wizard.daily.sales.dashboard.report.form</field>
+            <field name="model">wizard.daily.sales.dashboard.report</field>
             <field name="arch" type="xml">
-                <form string="Hourly Sales Dashboard Report">
+                <form string="Daily Sales Dashboard Report">
                     <group col="4">
+
                         <field name="from_date"/>
                         <field name="to_date"/>
                         <field name="categ_id" required="1"/>
@@ -23,19 +24,21 @@
             </field>
         </record>
 
-        <record id="action_hourly_sales_dashboard_wizard" model="ir.actions.act_window">
-            <field name="name">Hourly Sales Report</field>
+        <record id="action_sales_dashboard_wizard" model="ir.actions.act_window">
+            <field name="name">Daily Sales Report</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">wizard.hourly.sales.dashboard.report</field>
+            <field name="res_model">wizard.daily.sales.dashboard.report</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
         </record>
 
 
-        <menuitem id="hourly_sales_report"
-                  name="Hourly Sales Report" action="biztech_hourly_sales_report.action_hourly_sales_dashboard_wizard"
-                  parent="point_of_sale.menu_point_rep" sequence="1"/>
+        <menuitem id="daily_sales_report"
+                  name="Daily Sales Reports"
+                  action="biztech_daily_sales_report.action_sales_dashboard_wizard"
+                  parent="point_of_sale.menu_point_rep"
+                  sequence="2"/>
 
     </data>
 </odoo>

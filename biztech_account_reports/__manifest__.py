@@ -1,0 +1,25 @@
+
+{
+    'name': 'Accounting Reports for Chart of Accounts',
+    'version': '16.0',
+    'summary': "Accounting Reports for Chart of Accounts",
+    'sequence': 16,
+    'description': """Accounting Reports for Chart of Accounts""",
+    'category': 'Accounting',
+    'author': 'Biztech Computer',
+    'maintainer': 'Biztech Computer',
+    'website': 'https://biztechbh.biz',
+    'depends': ['account', 'report_xlsx'],
+    'data': [
+        'security/ir.model.access.csv',
+        'reports/report.xml',
+        'wizard/account_report_view.xml',
+        'reports/account_report_template.xml',
+    ],
+    'demo': [],
+    'license': 'AGPL-3',
+    'images': ['static/description/icon.png'],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
